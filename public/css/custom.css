@@ -1,0 +1,234 @@
+html { 
+	overflow-y: scroll; 
+}	
+
+body {
+	background-color: #fff;
+}
+
+/* Javascript identifiers */
+#content-1 {
+	opacity: 0;
+}
+#content-2 {
+	opacity: 0;
+}
+
+/* SPACING CLASSES */ 
+.left-buffer {
+	margin-left: 20px;
+}
+
+.left-buffer-minus20 {
+	margin-left: -20px;
+}
+
+.top-buffer-20 {
+	margin-top: 20px;
+}
+
+.top-buffer-carousel {
+	margin-top: 71px;
+}
+
+.top-buffer-minus20 {
+	margin-top: -20px;
+}
+
+.top-padding-20 {
+	padding-top:20px;
+}
+
+.bottom-buffer-0 {
+	margin-bottom: 0px;
+}
+
+.max-height-400 {
+	max-height: 400px;
+}
+
+.fit-to-div {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.stretch-to-div {
+	width:100%;
+	max-height: 100%;
+}
+
+.float-right {
+	float: right;
+}
+
+.padding-0 {
+	padding: 0;
+}
+
+
+/* HELPER CLASSES */
+
+.opacity-50 {
+	opacity: 0.5;
+}
+
+.opacity-0 {
+	opacity:0;
+}
+
+.background-eee{
+	background-color: #eee;
+}
+
+.background-ccc {
+	background-color: #ccc;
+}
+
+.background-fafafa {
+	background-color: #fafafa;
+}
+
+.background-lilac {
+	background-color: #ddf;
+}
+
+.background-dark-grey {
+	background-color: #666;
+}
+
+.background-black {
+	background-color: #000000;
+}
+
+/*BORDERS*/
+
+.bottom-border{
+	border-bottom: 1px solid #ccc
+}
+.top-border{
+	border-top: 1px solid #ccc
+}
+
+.content-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* INDEX */
+
+.apparatus-image {
+	max-height: 100%;
+	width:95%;
+}
+
+/*This stops the carousel image being responsive below 1200px wide screens to
+stop compressing the image and start zooming instead*/
+@media (max-width: 1200px) {
+	.carousel-inner > .item > img {  	
+		max-width:200%;
+  }
+}
+
+
+/* NAVBAR */
+
+.navbar-buttons > li > a {
+	position: relative;
+	display: block;
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 40px; 
+	font-size: 18px;
+}
+
+.navbar-logo {
+	padding: 0px 0px;
+}
+
+.navbar-logo > img {
+	max-height: 70px;
+}
+
+/* ABOUT PAGE */
+.right-divider {
+	border-right: 1px solid #ccc;
+}
+
+.zoom-out-fix {
+	min-width: 100%;
+}
+
+
+/* DEMO PAGE */
+
+.video {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 500px;
+  border: 0;
+  margin-top:0;
+}
+
+@media (min-width: 1500px) {
+  .video {
+  	max-width: 1500px;
+  }
+}
+
+/* LOW TEMP CAL */
+
+.navbar-xs { min-height:22px; height: 22px; border-radius:0} 
+.navbar-xs .navbar-brand{ padding: 2px 8px;font-size: 14px;line-height: 14px; } 
+.navbar-xs .navbar-nav > li > a { border-right:1px solid #ddd; padding-top: 2px; padding-bottom: 2px; line-height: 16px }
+
+#forum-notice {
+	margin-top: -30px;
+	opacity: 0;
+
+}
+
+/* EXPERIMENT PAGE - THEORY TAB */
+
+.theory-heading {
+	margin-left: 20px;
+}
+
+.border-hover:hover {
+	border: 1px solid 
+}
+
+
+.theory-heading > h3 {
+	font-size: 30px;
+}
+.theory-heading > h2 {
+	font-size: 50px;
+}
+
+.theory-heading > h1 {
+	font-size: 60px;
+}
+
+.theory-content {
+	margin-left: 20px;
+	font-size:18px ;
+}
+
+.theory-content > div > ol > li {
+	padding-top: 20px;
+}
+
+.theory-aims {
+	border-right: 1px solid #ccc
+}
+
+/* CONTACT PAGE */
+
+.user-info {
+	font-size: 16px;
+}
+
+.user-info-heading {
+	font-size: 22px;
+}

@@ -1,0 +1,69 @@
+application: lab3vle
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+# Handle the main page by serving the index page.
+# Note the $ to specify the end of the path, since app.yaml does prefix matching.
+
+
+- url: /
+  static_files: public/index.html 
+  upload: public/index.html
+
+- url: /(.*\.html) 
+  static_files: public/\1 
+  upload: public/(.*)
+
+- url: /css/(.*)
+  static_files: public/css/\1
+  upload: public/css/(.*)
+
+- url: /img/(.*)
+  static_files: public/img/\1
+  upload: public/img/(.*)
+
+- url: /js/(.*)
+  static_files: public/js/\1
+  upload: public/js/(.*)
+
+- url: /pdf/(.*)
+  static_files: public/pdf/\1
+  upload: public/pdf/(.*)
+
+- url: /fonts/(.*)
+  static_files: public/fonts/\1
+  upload: public/fonts/(.*)
+
+- url: /favicon\.ico
+  static_files: public/img/icon/favicon.ico
+  upload: public/img/icon/favicon\.ico
+
+# Recommended file skipping declaration from the GAE tutorials
+skip_files:
+  - ^(.*/)?app\.yaml
+  - ^(.*/)?app\.yml
+  - ^(.*/)?#.*#
+  - ^(.*/)?.*~
+  - ^(.*/)?.*\.py[co]
+  - ^(.*/)?.*/RCS/.*
+  - ^(.*/)?\..*
+  - ^(.*/)?tests$
+  - ^(.*/)?test$
+  - ^test/(.*/)?
+  - ^COPYING.LESSER
+  - ^README\..*
+  - \.gitignore
+  - ^\.git/.*
+  - \.*\.lint$
+  - ^fabfile\.py
+  - ^testrunner\.py
+  - ^grunt\.js
+  - ^node_modules/(.*/)?
+
+libraries:
+- name: webapp2
+  version: "2.5.2"

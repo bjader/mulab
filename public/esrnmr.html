@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/ico" href="img/icon/favicon.ico">
+
+  <title>muLab</title>
+
+  <!-- CSS files used -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- MATHJAX import -->
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <script src="js/ie-emulation-modes-warning.js"></script>
+
+  <!-- Google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75385803-2', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+      <!-- Navbar -->
+
+      <div class="container">
+        <nav class="navbar navbar-default navbar-xs" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><b>mu</b>LAB</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!--
+              li><a href="index.html"><i class="glyphicon glyphicon-adjust"></i></a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-bell"></i></a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li> 
+            -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="lowtemp.html">Low Temperature Calorimetry</a></li>
+                <li><a href="xray.html">X-Ray Spectroscopy</a></li>
+                <li><a href="esrnmr.html">ESR/NMR</a></li>
+                <li class="disabled"><a href="muon.html">Muon Lifetime <small> (coming soon) </small> </a></li>
+                <li class="divider"></li>
+                <li><a href="/">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </div>
+
+    <!-- Main body -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header text-center top-buffer-minus20 bottom-buffer-0 bottom-border">
+            <h1> Electron Spin Resonance and Nuclear Magnetic Resonance </h1>
+            <h2 class="text-center">PHAS3440</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tabbable" id="tabs-755532">
+            <ul class="nav nav-tabs nav-justified">
+              <li class="active">
+                <a href="#panel-1" data-toggle="tab">Theory</a>
+              </li>
+              <li>
+                <a href="#panel-2" data-toggle="tab">Apparatus</a>
+              </li>
+              <li>
+                <a href="#panel-5" data-toggle="tab">Quiz</a>
+              </li>
+              <li>
+                <p id="forum-notice" class="text-center"> Coming soon! </p>
+                <a id="forum-tab" href="#" data-toggle="tab">Forum</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+
+              <!-- THEORY TAB -->
+              <div class="tab-pane active" id="panel-1">
+                <div class="row">
+                  <div class="col-md-12 theory-heading">
+                    <h1 class="text-center">Theory</h1>
+                  </div>
+                </div>
+
+                <div class="row top-buffer-20 theory-content">
+
+                  <div class="col-md-7 top-buffer-minus20 theory-aims">
+                    <h1 class="text-center"> Electron Spin Resonance </h1>
+                    <h2> Background Research </h2>
+                    <p> Before beginning the ESR experiment you should ensure that you understand the following:</p>
+                    <p class="background-eee"> Student Activity: Revise the meaning of the quantum numbers $l$, $s$ and $j$ in atomic physics</p>
+                    <p class="background-eee"> Student Activity: Determine how atomic energy levels are affected by a magnetic field</p>
+                    <p class="background-eee"> Find out what optically active electrons are</p>
+                    <p class="background-eee"> Student Activity: Find out what paramagnetism is</p>
+                    <p class="background-eee"> Student Activity: Find out how Helmholtz coils work</p>
+                    <p class="background-eee"> Student Activity: Determine the characteristics of an oscillating electrical circuit</p>
+                    <p class="background-eee"> Student Activity: Find out the meaning of the width of a resonance peak and the Q factor</p>
+
+                    <h2> Theory </h2>
+
+                    <p> This phenomenon of electron spin resonance used in this experiment involves the transition of an optically active unpaired electron. When atom is placed in an external magnetic field, this causes the energy levels to split. This is called the Zeeman Effect. </p>
+                    <p>ESR involves a resonant coupling of the transition between Zeeman levels and an external oscillating electromagnetic field. When atom is placed in an external magnetic field, this causes the energy levels to split. This is called the Zeeman Effect. Electrons have charge and an intrinsic angular momentum called spin and thus must have a magnetic dipole moment, µ, antiparallel to the spin vector</p>
+                  </div>
+
+                  <div class="col-md-5">
+                    <h2> Experimental Aim</h2>
+                    <p> Investigate two forms of resonance associated with sub-atomic particles: electron spin resonance (ESR) and nuclear magnetic resonance (NMR). </p>
+                    <h2> Experimental Objectives </h2>
+                    <ul>
+                      <li> To understand the principles of ESR and NMR. </li>
+                      <li> To determine the ESR magnetic field as a funciton of the selected frequency. </li>
+                      <li> To determine the ESR g-factor of DPPH. </li>
+                      <li> To measure the ESR line width of the resonance signal. </li>
+                      <li> To observe and discuss the proton NMR in glycerol and other samples </li>
+                    </ul>
+                    <h3> Relevant Lecture Courses </h3>
+                    <ul>
+                      <li> PHAS2224 Atomic and Molecular Physics </li>
+                    </ul>
+                    <h3> Related 2nd year laboratory experiments </h3>
+                    <ul>
+                      <li>E7 Study of an Electrical System driven into Resonance</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row theory-content">
+                  <div class="col-md-7">
+                    <p> $$\mu ={g_s}{\mu_B} \qquad (1) $$</p>
+                    <p> Where ${g_s}$ is the Lande g factor and ${µ_B}$ is the Bohr magneton</p>
+                    <p> When a sample is exposed to electromagnetic (EM) radiation while in a magnetic field, the electron in the lower Zeeman energy level absorbs a quanta of EM radiation and transitions to the higher energy Zeeman level. The difference in energies of the two levels and the condition for resonance corresponds to: </p>
+                    <p> $$hv ={g_s}{\mu_B}B \qquad (2)$$</p>
+                    <p> Where $h$ is Planck’s constant and $v$ is the EM field frequency. </p>
+                    <p>This energy difference is found by bombarding photons with energy that is equal to the difference in energy of these two Zeeman levels. </p>
+                  </div>
+
+
+                  <div class="col-md-5">
+                    <br>
+                    <img style = "height:400px;" class="img-responsive img-thumbnail" src="img\ESR\ESR_theory_1b.png">
+                  </div>
+                  <br />
+                </div>
+
+                <div class="row theory-content">
+                  <div class="col-md-11">
+                    <p>
+                      This energy shown in equation (2) is quantized because the magnetic moment and the total angular momentum can only take discrete orientations relative to the magnetic field. Each orientation of the angular momentum corresponds to a state with a particular potential energy in the magnetic field. The difference in these energies is found directly using electron spin resonance. So if the energy of this alternating field is equal to the difference in energy between two bordering energy levels and equation (2) is satisfied, then the alternating field causes the magnetic moments from one orientation of the magnetic field to flip to another.
+                    </p>  
+                    <p class="background-eee">Student Activity: Is the Zeeman Effect in use in the experiment normal or anomalous?</p>
+                    <p class="background-eee">Student Activity: What is the g factor for a free electron?</p>
+                    <p class="background-eee">Student Activity: How does the peak width vary with frequency across the measurement range?</p>
+                    <p class="background-eee">Student Activity: What is the physical interpretation of the width of the peak?</p>
+                    <p class="background-eee">Student Activity: Is the ESR experiment affected by magnetic hysteresis and why?</p>
+
+                    <h1 class="text-center"> Nuclear Magnetic Resonance </h1>
+                    <h2> Background Research </h2>
+                    <p> Before beginning the ESR experiment you should ensure that you understand the following:</p>
+                    <p class="background-eee"> Student Activity: Research the characteristics of an oscillating electrical circuit</p>
+                    <p class="background-eee"> Student Activity: Determine the width of a resonance peak and the Q factor </p>
+                    <p class="background-eee"> Student Activity: Find out how quantised nuclear energy levels are affected by an applied magnetic field</p>
+                    <p class="background-eee"> Student Activity: Determine the precession of a magnetic dipole in an applied magnetic field</p>
+                    <p class="background-eee"> Student Activity: What is the thermal equilibrium in a system of two energy levels separated by $\Delta$E</p>
+                    <p class="background-eee"> Student Activity: Find out how the field of an electromagnet is affected by magnetic hysteresis</p>
+
+                    <h2> Theory </h2>
+                    <p> Nuclear magnetic resonance (NMR) is based on the magnetic properties of the nucleus.  Like in ESR where the electron has an associated spin, the protons and neutrons also have an associated spin which means a nucleus that contains an unpaired proton and/or neutron has a magnetic dipole moment, $\mu$. </p>
+                    <p> $$ \mu = g {\mu_n}$$ </p>
+                    <p> Where ${\mu_n}$ is the nuclear magneton and $g$ is the g factor.
+                      <p>This means that the theory outlined for ESR also applies to nuclei as well as electrons. When nuclei with spins of ½ such as protons are placed in a magnetic field, the spin axes of the nuclei undergo precession about the field direction instead of obediently flipping over and the magnetic moments aligning in the field direction. The frequency of this precession is known as the Larmor frequency, w, which is identical to the transition frequency.</p>
+                      <p> $$\omega = \gamma B$$ </p>
+                      <p> Where $\gamma$ is the gyromagnetic ration and $B$ is the applied magnetic field </p>
+                      <p> This means that if a nucleus of spin ½ is in a magnetic field, then the nucleus is in its lower energy level. When a magnetic field is present, the axis of rotation will precess around the magnetic field and its frequency is given in equation (4). The potential energy of this precessing nucleus is given by, </p>
+                      <p> $$E = \mu B cos(\theta)$$ </p>
+                      <p> Where $E$ is the energy and $\theta$ is the angle between the applied magnetic field and the axis of rotation. </p>
+                      <p> So if the nucleus absorbs energy, then this angle will change. This means that for a nucleus, absorption of this radiation flips the magnetic moment so that it opposes the applied field and transitions to its higher energy state at a resonance frequency. This effect is known as Nuclear Magnetic Resonance (NMR).</p>
+                      <p class="background-eee"> Student Activity: What is the g factor for a free proton?</p>
+                      <p class="background-eee"> Student Activity: Is equation (4) valid throughout the available frequency range i.e. is the effect truly linear?</p>
+                      <p class="background-eee"> Student Activity: Is the NMR experiment affected by magnetic hysteresis and why?</p>
+
+                    </div>
+                  </div>
+                </div> 
+
+
+                <!-- APPARATUS TAB -->
+
+                <div class="tab-pane" id="panel-2">
+                  <div class="row theory-content">
+                    <div class="col-md-12 theory-heading">
+                      <h1 class="text-center">Apparatus</h1>
+                      <h2 class="text-center">Electron Spin Resonance </h2>
+                    </div>
+                  </div>
+
+                  <div class="row theory-content">
+                    <div class="col-md-12">
+                      <img class="img-responsive apparatus-image center-block" src="img/ESR_apparatus_1_lowres.jpg" alt="Generic placeholder image">
+                    </div>
+                  </div>
+                  <div class="row theory-content">
+                    <div class="col-md-11">
+                      <h2><u> Apparatus </u></h2>
+                    </div>
+                    <div class="col-md-7">
+                      <p> Figure 1 consists of a Leybold didactic GMBH ESR basic unit (SE-9635) and it is driven by the Leybold didactic GMBH ESR control unit (SE-9636).</p>
+                      <p>The ESR control unit provides all the required voltages needed to drive the probe unit and the Helmholtz coils, provides a digital readout of the radio frequency oscillation created by the probe units and it provides outputs for a dual trace oscilloscope.</p>  
+                      <p> The output as shown on the Gould two channel 20MHz oscilloscope OS300 is proportional to the current in the radio frequency oscillator, and is used to observe the resonance pulses. The other output is proportional to the current that is supplied to the Helmholtz coils, and indicates the magnitude of the magnetic field. </p>
+                      <p> The ESR basic unit (SE-9635) consists of a pair of Helmholtz coils with bases that are connected parallel to each other and is used to provide a highly uniform magnetic field in which to place the sample material for the ESR measurement.</p>
+                      <p> The equipment set up and main components for this experiment are shown in Fig.1.  The experiment also consists of an ammeter which is used to record the current flowing 2I through the Helmholtz coils at the resonant frequencies and a Gauss meter attached to a Hall probe placed between the Helmholtz coils to ensure that the value of the magnetic field varies with coil current.</p>
+                    </div>
+                    <div class="col-md-5">
+                      <img style = "height:400px;" class="img-responsive img-thumbnail" src="img\ESR\ESR_1b.png">
+                    </div>
+                  </div>
+
+                  <div class="row theory-content">
+                    <div class="col-md-11">
+                      <p> The DPPH is readily supplied in a small test tube which fits inside one of the small, medium and large copper inductance coils. Once an oscillating voltage is applied this generated a radio frequency radiation. Three copper coils of a different number of turns N are provided in this experiment and spans a range of frequencies driven by the ESR control unit. The small coil has 3 turns, the medium coil has 11 turns and the large copper inductance coil has 22 turns.  These give values for the Figure 1: The main components of the ESR experiment which show the ESR control unit and a basic unit with a coil holding a sample attached, an oscilloscope to display the ESR signal and two Helmholtz coils connected in parallel. 
+                        resonant frequency displayed on the ESR control unit and the current flowing through the Helmholtz coils 2I on the ammeter. One of these coils is plugged into the socket on the Basic Unit to form part of an oscillator circuit which can be driven by the Control Unit at frequencies between 15 and 130MHz. 
+                      </p>
+                      <p> When the frequency matches the electron spin resonance frequency of the specimen the radiation from the coil will be strongly absorbed. This changes the impedance of the oscillating circuit, reducing the voltage at the coil and thus creating a signal which can be detected using an oscilloscope. A picoscope (PC oscilloscope) is provided for capturing the oscilloscope traces for printing out and analysis.</p>
+                      <p> The external magnetic field, B, is generated by a pair of Helmholtz coils powered through the ESR Control Unit. This field has two components: a static field B0, which can be varied from 0 to about 4 mT by varying the coil current, and an alternating component at the mains frequency of 50Hz. The function of the alternating B field is to sweep the maximum field back and forwards through a small range of values, which makes it easier to detect the exact field value at which resonance occurs. (The frequency of this modulation is less than one millionth of the frequency of the radiation so the resonance condition will not be perturbed).</p>
+                      <p> In general, there will be a time delay between the signal from the copper coil reaching the oscilloscope and the modulated magnetic field. This means that the two signals arrive at the oscilloscope out of phase with one another. The control unit includes an adjustable phase shift (labeled φ) to compensate for this effect.</p>
+
+                      <h2><u> Method </u></h2>
+                      <h3> Setup of apparatus: </h3>
+                      <ul>
+                        <li> Set up the Helmholtz coils parallel to each other and the correct distance apart. </li>
+                        <li> Connect the Helmholtz coils in parallel to each other and in series with the ammeter to the ESR control unit. Make sure the current is running in the appropriate directions through both coils. Use the gaussmeter to check that the value of the magnetic field between the coils varies appropriately as a function of coil current. </li>
+                        <li> Connect the ESR basic unit to the ESR control unit with the 6-pin DIN cable.</li>
+                        <li> Using BNC cables, connect the output Y of the ESR control unit to channel 1 of the two-channel oscilloscope and the output X to channel 2. </li>
+                        <li> Insert one of the copper coils into the ESR basic unit and place the DPPH specimen inside the coil.  </li>
+                        <li> Position the ESR basic unit so that the specimen is in the correct position between the Helmholtz coils. </li>
+                        <li> Connect the picoscope to the computer using the USB cable. Use BNC T connectors and BNC cables to input the "ESR SIGNAL"͟ to channel A and the "$\Delta$B SIGNAL" to channel B of the picoscope.</li>
+                      </ul>
+                      <p class="background-eee"> Student Activity: What is the geometry of the B field generated by the Helmholtz coils? What should their spacing be, and where should the specimen be positioned relative to them? Why? What orientation should the copper coil have relative to the Helmholtz coils? </p>
+                      <p class="background-eee"> Student Activity: Examine the ESR control unit. What is being varied by each of the three adjustable dials on the front? </p>
+                      <p class="background-eee"> Student Activity: How does the Basic Unit work? What is the knob that adjusts the frequency connected to? What parameter of the circuit is being fed out of the Y socket? </p>
+                      <p class="background-eee"> Student Activity: Which of the three copper coils will provide the highest frequency?</p>
+                      <p class="background-eee"> Student Activity: For a typical value of external field supplied by the Helmholtz coils, what is the expected resonance frequency if g=2.0? What is the expected resonance frequency if g=1.0?</p>
+
+                    </div>
+                  </div>
+                  <div class="row theory-content">
+                    <div class="col-md-11">
+                      <h3> Determining the Lande g factor for DPPH: </h3>
+                      <p> A suggested procedure for initial measurements is as follows:  </p>
+                      <p>
+                        <ul>
+                          <li> Mount the copper coil with the smallest number of turns in the Basic Unit </li>
+                          <li> Turn on the ESR control unit. The unit senses automatically which coil has been fitted to the base unit and it will set the frequency automatically to a value close to the expected resonance </li>
+                          <li> Set the modulation amplitude $U_mod$ to the second scale marking </li>
+                          <li> Set the phase shift $\phi$ to zero</li>
+                          <li> Set the oscilloscope to dual channel operation and choose an appropriate time base</li>
+                          <li> Slowly increase the field of the Helmholtz coils by adjusting the voltage U0 until the resonance signals reach their maximum intensity. Fine adjustments can be made by varying the frequency slightly, using the knob on the top of the base unit. </li>
+                          <li>Switch the oscilloscope to x-y mode and adjust the phase shift so that the two resonance signals coincide i.e in phase.</li>
+                          <li>Vary the Helmholtz coil voltage until the resonance signal is symmetric. Set the modulation voltage as low as possible.</li>
+                          <li>Record the current 2I0 through the Helmholtz coils and the resonance frequency, with their uncertainties</li>
+                          <li>Change the frequency and repeat the procedure</li>
+                          <li>Plot a graph of resonance frequency against B0 and use this to determine a value of the 
+                            Landé g factor for DPPH.</li>
+                          </li>
+                        </p>
+                        <p class="background-eee"> Student Activity: What can you do to span a wider range of frequencies? Are there any calibration checks needed when doing this? </p>
+                      </div> 
+                    </div>
+
+                    <!-- NMR -->
+                    <div class="row">
+                      <div class="col-md-12 theory-heading">
+                        <h2 class="text-center">Nuclear Magnetic Resonance </h2>
+                      </div>
+                    </div>
+                    <div class="row theory-content">
+                      <div class="col-md-12">
+                        <img class="img-responsive apparatus-image center-block" src="img/ESR/NMR_apparatus_1.jpg">
+                      </div>
+                    </div>
+                    <div class="row theory-content">
+                      <div class="col-md-11">
+                        <h2><u> Apparatus </u></h2>
+                      </div>
+                      <div class="col-md-7">
+                        <p> The Leybold NMR supply unit (514 602) supplies the high frequency oscillating circuit in the measuring cell and the modulation coils of the NMR apparatus. It also works by amplifying the resonance signal during the observations of the transitions of the nuclear spin in an external magnetic field induced by high frequencies..</p>
+                        <p>The Leybold AC/DC constant current power supply 0-15 V (512 501) was used a constant current source from up to 5A. The two outputs on the supply are isolated from each other, ungrounded and protected against short circuit and external voltages. The Leybold NMR probe (541 606) consists of a pair of modulation coils, set of NMR samples and a pair of holding clamps. The sample is placed inside the sample holder. Also used in the experiment is a Leybold oscilloscope 30MHz, two channel, analogous (575 214).  It displays the NMR signal which can be saved as a trace on the picoscope.</p>
+                        <p> In this experiment you will use an electromagnet to provide the large static Bz and a set of smaller coils to add a small sinusoidal modulation ΔBz. As in the ESR experiment, the modulation will allow you to pass periodically through the exact NMR resonance condition at a fixed excitation frequency and thereby visualize the resonance on the oscilloscope in x-y mode. </p>
+
+                      </div>
+                      <div class="col-md-5">
+                        <img style = "height:400px;" class="fit-to-div img-thumbnail img-responsive" src="img\ESR\NMR_1.png">
+                      </div>
+                    </div>
+
+                    <div class="row theory-content">
+                      <div class="col-md-11">
+                        <p> The electromagnet consists of two large copper coils (480 turns) which will be used to magnetize a U-shaped soft iron core. Two small modulation coils are mounted on the pole-pieces of the magnet, and the brass NMR probe unit is mounted between the poles. A rod-shaped solid specimen or a small glass test-tube containing a liquid can be fitted vertically into a small hole at the top of the probe and held in place by a rubber O-ring. </p>
+                      </div>
+                    </div>
+                    <div class="row theory-content">
+                      <div class="col-md-11">
+                        <h2><u> Method </u></h2>
+                        <h3> Setup of apparatus: </h3>
+                        <ul>
+                          <li>Connect the two electromagnet coils to the DC power supply </li>
+                          <li>Connect the modulation coils to the “MODULATION” output of the NMR supply unit</li>
+                          <li>Using a BNC cable, connect the NMR probe to the input “PROBE” on the NMR supply unit </li>
+                          <li>Using BNC cables, connect the output “NMR SIGNAL” to the Y channel of the two-channel oscilloscope and the output “ΔB SIGNAL” to the X channel of the oscilloscope. </li>
+                          <li>Connect the picoscope to the computer using the USB cable. Use BNC T connectors and BNC cables to input the “NMR SIGNAL” to channel A and the “ΔB SIGNAL” to channel B of the picoscope.</li>
+                        </ul>
+                        <h3> NMR measurements on hydrogen in glycerine </h3>
+                        <p>Set the electromagnet coil current to zero. </p>
+                        <p>Place the glycerin sample in the specimen chamber and adjust the O-ring so that the sample is positioned in the region of maximum field. </p>
+                        <p> Set the controls on the NMR supply unit as follows: </p>
+                        <ul>
+                          <li> Set the NMR Oscillator Amplitude knob on the left-hand side of the NMR supply unit front panel to its minimum value (fully anti-clockwise) </li>
+                          <li>Set the NMR Oscillator Frequency knob to its maximum value (fully clockwise)</li>
+                          <li>Set the B-modulation Amplitude knob on the right-hand side of the NMR supply unit front panel to its maximum (fully clockwise).</li>
+                          <li>Turn on the NMR supply unit. No frequency should be displayed. </li>
+                          <li>Slowly turn the NMR Oscillator Amplitude knob clockwise until the LED above it glows. A frequency of approximately 15MHz should now be displayed</li>
+                        </ul>
+                        <p class="background-eee"> Student Activity: Calibration of the field of the electromagnet is a must. Set the electromagnet coil current to zero. With no specimen in the chamber, carefully insert the Hall probe into the chamber to measure the magnetic field. Be very careful not to damage either the Hall probe or the sample coil inside the specimen cavity. Take measurements of the maximum field within the sample coil as a function of coil current for several values of current up to a maximum of 5A. For one value of current, measure the field as a function of depth in the specimen chamber. Over what distance is the field uniform enough for NMR measurements? Estimate the experimental uncertainty associated with non-uniformity of the magnetic field. </p>
+                        <p class="background-eee">Student activity: What can be done to accommodate for magnetic hysteresis of the electromagnet?</p>
+                        <p class="background-eee">Student activity: Using equation 4, Calculate the magnetic field required to produce resonance at the displayed frequency.</p>
+                        <p> Set the current in the electromagnet to produce a field of the appropriate magnitude. With the oscilloscope in x-t mode, slowly adjust the field until you see an NMR signal. (How should the scope be triggered?) The NMR signal will appear as voltage spikes riding on the sine wave. Observe and record the effect on the NMR signal of adjusting the phase and amplitude of the ΔB output. Now set the scope to x-y mode. Again observe and record the effect of adjusting the phase and amplitude and comment on the results. Adjust the phase and amplitude of the NMR signal so that it has one central peak.</p>
+                        <p> Measure the resonance frequency of glycerin as a function of magnet current for the full range of oscillator frequencies for which a signal can be detected. Since the magnetic field is hysteretic, you may wish to remove the sample and measure the field with the Hall probe at each setting. </p>
+                        <p> Plot a graph of frequency against B and determine g for the unpaired proton in glycerin. Compare your result with the accepted value. Steps can be repeated for PTFE and polystyrene. </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="tab-pane" id="panel-5">
+                    <iframe id='quizWidget-169333' width='100%' height='700px' frameborder='0' border='none' src='https://www.boombox.com/widget/quiz/fi9xdWl6emVzLzE2OTMzMw'></iframe>
+                  </div>
+                  <div class="tab-pane" id="panel-6">
+                    <p>
+                      Forum
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </body>
+
+        <script src="js/sin.js"></script>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vendor/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

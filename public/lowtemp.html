@@ -1,0 +1,332 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/ico" href="img/icon/favicon.ico">
+
+    <title>muLab</title>
+
+    <!-- CSS files used -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/LTC_Carousel.css" rel="stylesheet">
+
+    <!-- MATHJAX import -->
+    <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-75385803-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+
+      <body>
+
+        <!-- Navbar -->
+
+        <div class="container">
+          <nav class="navbar navbar-default navbar-xs" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"><b>mu</b>LAB</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!--
+                li><a href="index.html"><i class="glyphicon glyphicon-adjust"></i></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-bell"></i></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i></a></li> 
+              -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="lowtemp.html">Low Temperature Calorimetry</a></li>
+                  <li><a href="xray.html">X-Ray Spectroscopy</a></li>
+                  <li><a href="esrnmr.html">ESR/NMR</a></li>
+                  <li class="disabled"><a href="muon.html">Muon Lifetime <small> (coming soon) </small> </a></li>
+                  <li class="divider"></li>
+                  <li><a href="/">Home</a></li>
+                  <li class="divider"></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+      </div>
+
+      <!-- Main body -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header text-center top-buffer-minus20 bottom-buffer-0 bottom-border">
+              <h1> Low Temperature Calorimetry</h1>
+              <h2 class="text-center">PHAS3440</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tabbable" id="tabs-755532">
+              <ul class="nav nav-tabs nav-justified">
+                <li class="active">
+                  <a href="#panel-1" data-toggle="tab">Theory</a>
+                </li>
+                <li>
+                  <a href="#panel-2" data-toggle="tab">Apparatus</a>
+                </li>
+                <li>
+                  <a href="#panel-5" data-toggle="tab">Quiz</a>
+                </li>
+                <li>
+                  <p id="forum-notice" class="text-center"> Coming soon! </p>
+                  <a id="forum-tab" href="#" data-toggle="tab">Forum</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+
+                <!-- THEORY TAB -->
+                <div class="tab-pane active" id="panel-1">
+                  <div class="row">
+                    <div class="col-md-12 theory-heading">
+                      <h1 class="text-center">Theory</h1>
+                    </div>
+                  </div>
+
+                  <div class="row top-buffer-20 theory-content">
+
+                    <div class="col-md-6 top-buffer-minus20">
+                     <h2> Background </h2>
+                     <p> Before beginning this experiment, it is recommended you explore the theory of heat capacity and thermal conductivity. Examples are given below as a rough guide.</p>
+                     <p class="background-eee"> Student Activity: Revise the definitions of specific heat capacity and thermal conductivity</p>
+                     <p class="background-eee"> Student Activity: Revise the mechanisms of heat transfer; conduction, convection and radiation.</p>
+                     <p class="background-eee"> Student Activity: Find out how the specific heat capacity of a typical solid varies with temperature.</p>
+                     <p class="background-eee"> Student Activity: Revise the Einstein and Debye models of specific heat capacity.</p>
+                     <h2> Theory </h2>
+                     <h3> <u> Molar specific heat capacity </u> </h3>
+                     <p> At low temperatures, the molar specific heat capacityofsolids is seen to deviate from its room temperature values.There are three models that best describe the behaviour of the heat capacity of solids. </p>
+                   </div>
+
+                   <div class="col-md-5 float-right theory-aims">
+                    <h2> Experimental Aim</h2>
+                    <p> The aim of the experiment is to calculate the low temperature thermal properties of copper using liquid nitrogen cryogens. </p>
+                    <h2> Experimental Objectives </h2>
+                    <ul>
+                      <li> To understand the operation of a vacuum cryostat </li>
+                      <li> To measure the thermal conductivity of copper as a function of temperature in the temperature range 77K to 120K. </li>
+                      <li> To determine the molar specific heat of copper at constant volume as a function of temperature. </li>
+                      <li> To compare the experimental results with the accepted reference values and the theoretical prediction from the Einstein and Debye models of solids. </li>
+                    </ul>
+                    <h3> Relevant Lecture Courses </h3>
+                    <ul>
+                      <li> PHAS1228 Thermal Physics and Properties of Matter </li>
+                      <li> PHAS2228 Statistical Thermodynamics </li>
+                      <li> PHAS3225 Solid State Physics </li>
+
+
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="row theory-content">
+                    <div class="col-md-11 col-md-offset-">
+
+
+                      <ol>
+                        <li> The Law of Dulong and Petit:
+                          <br>
+                        </br>
+                        <p> Dulong and Petit formed a theory of heat capacity based on classical physics using the equipartition theoryand MaxwellBoltzmann statistics. The theory stated that the energy of the lattice is split equally amongst the available degrees of freedom; vibrational, translational and rotational motions within the lattice. This predicts that the heat capacity for many solids remains constant at ~ 3R where R is the gas constant.</p>
+                      </li>
+                      <li> Einstein Model of Solids:
+                        <br>
+                      </br>
+                      <p> Experimental evidence suggests that the specific heat capacity of solids does not remain constant and in fact deviates from the Dulong and Petit predictions when the temperature decreases below the room temperature. To account for this, Einstein postulated that each atom in the lattice behaved as if it were a single quantum harmonic oscillatorwith each one vibrating with the same frequency $\omega$.At high temperatures, the Dulong and Petit predictions are recovered. However, at low temperatures, the model deviates from the experimental values which led to a different theory being postulated.</p>
+                      <p class="background-eee"> Student Activity: How and why did Einstein’s model fail at low temperatures? </p>
+                    </li>
+                    <li> Debye Model of Solids:
+                      <br>
+                    </br>
+                    <p> In light of Einstein’s failure at low temperatures, Peter Debye postulated that the internal energy of the lattice is contained within phonons whose frequencies vary. This correction provided a more consistent link between the theoretical and experimental values. </p>
+                    <p class="background-eee"> Student Activity: Compare the Einstein model and the Debye theory indicating the effects each theory has in relation to the consistency with the experimental results. </p>
+                  </li>
+                </ol>
+                <h3> <u> Thermal Conductivity</u> </h3>
+                <p> The thermal conductivity of copper is also seen to vary as a function of temperature. In short, this is due to the amount of phonon scattering within the lattice which limits the thermal conductivity. Other effects such as impurities and defects are also seen to affect the thermal conductivity of metals. </p>
+                <p class="background-eee"> Student Activity: How does the thermal conductivity vary as a function of temperature? </p> 
+                <p class="background-eee"> Student Activity: What are phonons? How do they limit thermal conductivity?</p>
+              </div> 
+            </div>
+          </div>
+
+          <!-- APPARATUS TAB -->
+
+          <div class="tab-pane" id="panel-2">
+            <div class="row theory-content">
+              <div class="col-md-12 theory-heading">
+                <h1 class="text-center">Apparatus</h1>
+              </div>
+            </div>
+
+            <div class="row theory-content">
+              <div class="col-md-12">
+                <h3 class=""><u> Apparatus and Method </u> </h3>
+
+                <img class="apparatus-image featurette-image img-responsive" src="img/LTC_apparatus_1_lowres.jpg" alt="Generic placeholder image">
+              </div>
+            </div>
+            <div class="row theory-content">
+              <div class="col-md-10 col-md-offset-">
+                <br>
+                <h3 class=""><u> Principles of the experiment</u></h3>
+              </div>
+              <div class="col-md-6">
+                <p> The experimental equipment is split up into two parts; the vacuum system and the cryostat. The vacuum system consists of a rotary mechanical backingpump working in tandem with a diffusion pumppumping the cryostat to a high vacuum.Figure (1) shows the set-up within the cryostat.</p>
+                <p class="background-eee">Student Activity: Why are the samples held under vacuum?</p>
+              </div>
+              <div class="col-md-4 col-md-offset-1">
+                <div id="myCarousel" class="carousel slide top-buffer-carousel" data-ride="carousel"> 
+                  <!-- Indicators -->
+                  <div class="carousel-inner">
+                    <div class="item active"> <img src="img/LTC_carousel_1_lowres.jpg" style="width:100%" alt="First slide">
+                    </div>
+                    <div class="item"> <img src="img/LTC_carousel_2_lowres.jpg" style="width:100%" data-src="" alt="Second slide">
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item"> <img src="img/LTC_carousel_3_lowres.jpg" style="width:100%" data-src="" alt="Third slide">
+                      <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+                </div>
+              </div>
+            </div>
+            <br></br>
+
+            <div class="row theory-content">
+              <div class="col-md-11">
+                <p> In this experiment a small copper bar is attached by two fine copper wires to a large “heat sink”, i.e. a large copper block which is held at a constant low temperature. Heat is applied directly to the bar by an electrical heater of constant power. This heat is conducted away from the bar to the heat sink through the copper wires. When the heater is first turned on the temperature of the bar rises until the rate at which heat is applied to the bar is equal to the rate at which heat is conducted away through the wires. The temperature of the bar therefore tends to a new equilibrium value,Tmax, higher than the base temperature of the heat sink. This behaviour is displayed in figure (2). </p>
+                <p> The rate at which the heat is conducted away through a wire is given by (1): 
+                $$IV = - \frac{K_TA}{L}\Delta T \qquad (1).$$ </p>
+              </div>
+              <div class="col-md-6">
+                  <p> Where:
+                   <ul>
+                    <li> $IV$ is the power of the heater</li>
+                    <li> $K_T$ is the thermal conductivity of the wire </li>
+                    <li> $A$ is the cross-sectional area of the wires </li>
+                    <li> $L$ is the length of the wire </li>
+                    <li>$\Delta T$ is the difference in temperature of the bar and the heat sink.
+                    </li>
+                  </ul>
+                  To maintain a constant temperature, liquid nitrogen is held in a large vessel which cools the copper base plate and hence copper bar to 77K. Because the mass of the heat sink is much higher than the mass of the bar, it can be assumed that the temperature of the heat sink does not change.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img style="width:80%" class="img-responsive center-block" src="img/LTC_graph1.jpg" alt="Generic placeholder image">
+              </div>
+              <div class="col-md-11">
+                <p>  Therefore, the temperature difference ΔT depends only on the power input from the heater and by applying different heater powers and measuring ΔT, the thermal conductivity of the copper wires can be measured over arange of different equilibrium temperature $T_{max}$ values. </p>
+              </div>
+              
+              <div class="col-md-11">
+                <p class="background-eee"> Student Activity: How would you expect the equilibrium temperature Tmaxto vary as the power supplied to it varies?</p> 
+                <p class="background-eee"> Student Activity: Label the parts of the curve that correspond to (a) before the heater is turned on, (b) when the heater is turned on and (c) the equilibrium temperature.</p>
+                <p> The value of the specific heat capacity of the bar can be derived from the rate of change of temperature of the bar before it reaches equilibrium. When the heater has been switched on, but before the equilibrium temperature Tmax has been reached, part of the input power IV is being lost by conduction through the two wires but the rest is heating the bar.</p>
+              </div>
+            </div>
+            <div class="row theory-content">
+              <div class="col-md-6">
+                <p> By considering two temperatures $T_1$ and $T_2$ close together on the rising part of the curve as in figure (3), the specific heat capacity can be calculated. Provided that Δt is sufficiently small, the temperature increase between $T_1$ and $T_2$ can be assumed to be linear and approximated by a straight line. Provided that all the heat loss from the bar is due to conduction through the wires, it can be shown that \(C_v\) is given by (2).</p>
+                <p> $$C_v = \bigg[\frac{IV}{n(T_2 - T_1} - \frac{K_T A (T_2 - T_{base})}{nL(T_2 - T_1)}\bigg]\Delta T. \qquad (2) $$ </p>
+                <p> Where $n$ is the number of moles of copper being heated and $T_{base}$ is the base temperature of the copper bar when no heat is being applied.</p>
+              </div>
+              <div class="col-md-5">
+                <img style="width:80%" class="img-responsive center-block" src="img/LTC_graph2.png" alt="Generic placeholder image">
+              </div>
+              <div class="col-md-11">
+                <p class="background-eee"> Student Activity: In practice, is all the heat loss from the specimen by conduction through the wires? What other heat loss mechanisms are possible in this experiment? How significant are they? </p>
+                <p class="background-eee"> Student Activity: In what form is the heat capacity equation in (2) in? I.e. which part represents the heat in and which part represents the heat out? </p>
+                <p class="background-eee"> Student activity: How does the resistance of the heater coil change with temperature? How does this affect the results?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="panel-5">
+            <iframe id='quizWidget-167104' width='100%' height='700px' frameborder='0' border='none' src='https://www.boombox.com/widget/quiz/fi9xdWl6emVzLzE2NzEwNA'></iframe>
+          </div>
+          <div class="tab-pane" id="panel-6">
+            <p>
+              Forum
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vendor/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
